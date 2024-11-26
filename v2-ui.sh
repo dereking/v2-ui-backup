@@ -5,7 +5,7 @@
 #   Description: Manage v2-ui
 #   Date: 2021-03-12
 #   Author: nullptrX
-#   Github - v2-ui: https://github.com/nullptrX/v2-ui
+#   Github - v2-ui: https://github.com/dereking/v2-ui-backup
 #======================================================
 
 red='\033[0;31m'
@@ -90,7 +90,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/nullptrX/v2-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/dereking/v2-ui-backup/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -109,7 +109,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/nullptrX/v2-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/dereking/v2-ui-backup/master/install.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}更新完成，已自动重启面板${plain}"
         exit
@@ -295,7 +295,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/nullptrX/v2-ui/raw/master/v2-ui.sh
+    wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/dereking/v2-ui-backup/raw/master/v2-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}下载脚本失败，请检查本机能否连接 Github${plain}"
@@ -420,7 +420,7 @@ show_usage() {
 show_menu() {
     echo -e "
   ${green}v2-ui 面板管理脚本${plain}
---- https://github.com/nullptrX/v2-ui ---
+--- https://github.com/dereking/v2-ui-backup ---
   ${green}0.${plain} 退出脚本
 ————————————————
   ${green}1.${plain} 安装 v2-ui
