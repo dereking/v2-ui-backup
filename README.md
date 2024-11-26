@@ -33,7 +33,7 @@ v2-ui 与其它所有关于修改 v2ray 配置文件的工具***完全不兼容*
 
 ## 一键安装&升级
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/nullptrX/v2-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/dereking/v2-ui-backup/master/install.sh)
 ```
 
 ## 手动安装&升级
@@ -41,7 +41,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/nullptrX/v2-ui/master/install.
 无需手动安装 v2ray，v2-ui 自带官方 v2ray 内核
 
 ### 手动安装 v2-ui
-https://github.com/nullptrX/v2-ui/releases
+https://github.com/dereking/v2-ui-backup/releases
 
 从该地址中下载最新的 v2-ui-linux.tar.gz 文件，并上传至 VPS 的 /root/ 目录下。若你上传至其它的目录，则将第一行命令的 cd /root/ 改为 cd (实际的目录)，不用包括文件名。
 ```

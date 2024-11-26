@@ -33,7 +33,7 @@ If necessary, please make a backup in advance to avoid unnecessary consequences.
 
 ## One command installation & upgrade
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/nullptrX/v2-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/dereking/v2-ui-backup/master/install.sh)
 ```
 
 # Other operations
