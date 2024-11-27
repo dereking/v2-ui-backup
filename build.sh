@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+pip install -r requirements.txt
+
 pyinstaller v2-ui.py -y \
   --clean \
   --workpath build \
