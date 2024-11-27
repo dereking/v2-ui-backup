@@ -14,4 +14,7 @@ pyinstaller v2-ui.py -y \
 
 cd dist
 
+cp -r v2-ui/_internal/bin ./v2-ui/
+cp v2-ui/_internal/v2-ui.service ./v2-ui/v2-ui.service
+
 tar zcvf v2-ui-linux.tar.gz v2-ui

@@ -11,3 +11,4 @@ __pycache__
 /bin/v2ray-win.exe
 /bin/config.json
 .DS_Store
+/build

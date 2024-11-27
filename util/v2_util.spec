@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['v2-ui.py'],
+    ['v2_util.py'],
     pathex=[],
     binaries=[],
-    datas=[('templates', 'templates'), ('static', 'static'), ('translations', 'translations'), ('bin', 'bin'), ('template_config.json', '.'), ('v2-ui.service', '.')],
+    datas=[],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -21,7 +21,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='v2-ui',
+    name='v2_util',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -40,5 +40,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='v2-ui',
+    name='v2_util',
 )
